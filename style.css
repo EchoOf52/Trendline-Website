@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Montserrat';
 }
 
@@ -19,19 +25,32 @@ body {
 #nav {
     height: 50px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0px 30px;
 }
-#nav h5{
+
+#nav h5 {
     display: none;
 }
 
 #nav-part1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 2px;
 }
 
@@ -43,9 +62,15 @@ body {
 }
 
 #nav-part2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 40px;
 }
 
@@ -62,8 +87,12 @@ body {
 #nav2 {
     height: 60px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 20px;
     gap: 50px;
 }
@@ -82,8 +111,11 @@ body {
 #text-content {
     height: 40%;
     width: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     overflow-x: auto;
 }
 
@@ -97,12 +129,19 @@ body {
 }
 
 .elem {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 60%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .elem h1 {
@@ -113,18 +152,22 @@ body {
 #image-content {
     height: 60%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow-x: auto;
 }
 
 #image-content img {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
-#image-content::-webkit-scrollbar{
+#image-content::-webkit-scrollbar {
     display: none;
 }
 
@@ -133,34 +176,40 @@ body {
         height: 60px;
         padding: 0px 20px;
     }
+
     #nav-part1 {
         gap: 2px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
-    
+
     .circle {
         height: 16px;
         width: 16px;
         background-color: black;
         border-radius: 50%;
     }
-    #nav h5{
+
+    #nav h5 {
         display: initial;
     }
-    #nav h5 i{
+
+    #nav h5 i {
         font-size: 20px;
     }
 
     #nav-part2 {
         gap: 20px;
     }
-    
+
     #nav-part2 h4 {
         font-size: 15px;
         font-weight: 500;
         display: none;
     }
-    #nav-part2 h4:nth-child(1){
+
+    #nav-part2 h4:nth-child(1) {
         display: initial;
         margin-right: 10px;
     }
@@ -169,14 +218,17 @@ body {
         color: rgb(128, 128, 128);
         /* margin: 20px; */
     }
+
     #nav2 {
         height: 65px;
         width: 100%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 0 10px;
         gap: 10px;
     }
-    
+
     #nav2 h3 {
         font-size: 2.5vw;
         text-transform: uppercase;
@@ -188,56 +240,71 @@ body {
         height: calc(100% - 115px);
         width: 100%;
     }
-    
+
     #text-content {
         height: 35%;
         width: 100;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
         overflow-x: auto;
     }
-    
+
     #text-content::-webkit-scrollbar {
         background-color: transparent;
         height: 4px;
     }
-    
+
     #text-content::-webkit-scrollbar-thumb {
         background-color: orange;
     }
-    
+
     .elem {
-        flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
         width: 100%;
         height: 80%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
-    
+
     .elem h1 {
         font-size: 13vw;
         white-space: nowrap;
         font-weight: 500;
     }
-    
+
     #image-content {
         height: 65%;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         overflow-x: auto;
     }
-    
+
     #image-content img {
-        flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
         height: 100%;
         width: 100%;
-        object-fit: cover;
-        object-position: center;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center;
     }
-    
-    #image-content::-webkit-scrollbar{
+
+    #image-content::-webkit-scrollbar {
         display: none;
     }
-    
+
 }

@@ -1,13 +1,12 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    src: url("./src/Montserrat.ttf")
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Montserrat';
 }
 
@@ -25,15 +24,9 @@ body {
 #nav {
     height: 50px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     padding: 0px 30px;
 }
 
@@ -42,15 +35,9 @@ body {
 }
 
 #nav-part1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     gap: 2px;
 }
 
@@ -62,15 +49,9 @@ body {
 }
 
 #nav-part2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -87,12 +68,8 @@ body {
 #nav2 {
     height: 60px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     padding: 0 20px;
     gap: 50px;
 }
@@ -111,11 +88,8 @@ body {
 #text-content {
     height: 40%;
     width: 100;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     overflow-x: auto;
 }
 
@@ -129,19 +103,12 @@ body {
 }
 
 .elem {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     width: 60%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .elem h1 {
@@ -152,19 +119,15 @@ body {
 #image-content {
     height: 60%;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     overflow-x: auto;
 }
 
 #image-content img {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 #image-content::-webkit-scrollbar {
@@ -179,9 +142,7 @@ body {
 
     #nav-part1 {
         gap: 2px;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
     }
 
     .circle {
@@ -222,9 +183,7 @@ body {
     #nav2 {
         height: 65px;
         width: 100%;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        justify-content: space-between;
         padding: 0 10px;
         gap: 10px;
     }
@@ -244,11 +203,8 @@ body {
     #text-content {
         height: 35%;
         width: 100;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+        flex-wrap: nowrap;
         overflow-x: auto;
     }
 
@@ -262,19 +218,12 @@ body {
     }
 
     .elem {
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
+        flex-shrink: 0;
         width: 100%;
         height: 80%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .elem h1 {
@@ -286,21 +235,16 @@ body {
     #image-content {
         height: 65%;
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         overflow-x: auto;
     }
 
     #image-content img {
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
+        flex-shrink: 0;
         height: 100%;
         width: 100%;
-        -o-object-fit: cover;
-           object-fit: cover;
-        -o-object-position: center;
-           object-position: center;
+        object-fit: cover;
+        object-position: center;
     }
 
     #image-content::-webkit-scrollbar {
